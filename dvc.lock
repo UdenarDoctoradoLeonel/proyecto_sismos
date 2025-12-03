@@ -1,0 +1,50 @@
+schema: '2.0'
+stages:
+  clean_data:
+    cmd: python src/clean_data.py
+    deps:
+    - path: data/raw/Eartquakes-1990-2023.csv
+      hash: md5
+      md5: feab17efb13563430f45277d9f67d91e
+      size: 494792338
+    - path: src/clean_data.py
+      hash: md5
+      md5: 91c42428c697d14d4ec6490388917f5e
+      size: 1501
+    outs:
+    - path: data/clean/earthquakes_clean.csv
+      hash: md5
+      md5: b1721a19ba220da3e2761cac50986e69
+      size: 494789472
+  prepare_data:
+    cmd: python src/prepare_data.py
+    deps:
+    - path: data/clean/earthquakes_clean.csv
+      hash: md5
+      md5: b1721a19ba220da3e2761cac50986e69
+      size: 494789472
+    - path: src/prepare_data.py
+      hash: md5
+      md5: d78b81aa11903462a07a8e258cba061f
+      size: 1262
+    outs:
+    - path: data/clean/earthquakes_prepared.csv
+      hash: md5
+      md5: bd21197507a8209d9a4a71796a1134ec
+      size: 876525054
+  train_model:
+    cmd: python src/train_model.py
+    deps:
+    - path: data/clean/earthquakes_prepared.csv
+      hash: md5
+      md5: bd21197507a8209d9a4a71796a1134ec
+      size: 876525054
+    - path: src/train_model.py
+      hash: md5
+      md5: c3a021b25116959b1b05459cc65cac52
+      size: 4397
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 240067d84bc498d8783b124276bd11fa
+      size: 91157

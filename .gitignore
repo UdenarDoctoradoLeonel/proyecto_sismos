@@ -1,0 +1,51 @@
+# ==========================
+# ARCHIVOS DEL ENTORNO
+# ==========================
+.venv/
+env/
+venv/
+
+# ==========================
+# ARCHIVOS DEL SISTEMA
+# ==========================
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ==========================
+# ARCHIVOS DE EDITORES
+# ==========================
+.vscode/
+.idea/
+
+# ==========================
+# DVC & DATA
+# ==========================
+# NO SE SUBEN DATOS RAW NI CLEAN
+data/raw/*
+data/clean/*
+
+# PERO SÍ se suben los .dvc
+!data/raw/*.dvc
+!data/clean/*.dvc
+
+# ==========================
+# MODELOS Y EXPERIMENTOS
+# ==========================
+models/
+mlruns/
+
+# ==========================
+# ARCHIVOS TEMPORALES
+# ==========================
+*.log
+*.tmp
+*.out
+*.bak
+
+# ==========================
+# JUPYTER NOTEBOOK CHECKPOINTS
+# ==========================
+.ipynb_checkpoints/

@@ -1,0 +1,16 @@
+# Evitar que DVC escanee notebooks compilados
+.ipynb_checkpoints/
+
+# Ignorar archivos temporales
+*.tmp
+*.log
+*.bak
+
+# Evitar que DVC considere el entorno
+.venv/
+venv/
+env/
+
+# Ignorar editor metadata
+.vscode/
+.idea/

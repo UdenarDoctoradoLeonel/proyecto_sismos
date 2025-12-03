@@ -1,0 +1,24 @@
+stages:
+  clean_data:
+    cmd: python src/clean_data.py
+    deps:
+      - src/clean_data.py
+      - data/raw/Eartquakes-1990-2023.csv
+    outs:
+      - data/clean/earthquakes_clean.csv
+
+  prepare_data:
+    cmd: python src/prepare_data.py
+    deps:
+      - src/prepare_data.py
+      - data/clean/earthquakes_clean.csv
+    outs:
+      - data/clean/earthquakes_prepared.csv
+
+  train_model:
+    cmd: python src/train_model.py
+    deps:
+      - src/train_model.py
+      - data/clean/earthquakes_prepared.csv
+    outs:
+      - models/model.pkl
