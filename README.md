@@ -53,9 +53,6 @@ Se entrenaron dos modelos de referencia:
 La comparación se realizó a partir de las métricas de precisión y F1.  
 El Random Forest obtuvo el mejor rendimiento y fue almacenado como modelo final.
 
-### d. Implementación de una aplicación web  
-Se construyó una interfaz que permite ingresar valores de un sismo hipotético y obtener la clasificación estimada por el modelo.
-
 ---
 
 ## 4. Arquitectura del pipeline
