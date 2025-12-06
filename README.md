@@ -90,17 +90,7 @@ El modelo Random Forest alcanzó un desempeño superior en la clasificación, co
 
 ---
 
-## 6. Aplicación web del proyecto
-
-La aplicación está disponible en el siguiente enlace:
-
-**https://proyectosismos-ikfskcmjs4gje3ajwbewc3.streamlit.app**
-
-Permite ajustar los valores de magnitud, profundidad, ubicación, presencia de tsunami y nivel de significancia para evaluar la probabilidad de que el sismo sea clasificado como significativo.
-
----
-
-## 7. Cómo ejecutar el proyecto localmente
+## 6. Cómo ejecutar el proyecto localmente
 
         # Crear y activar entorno virtual
         python3 -m venv .venv
@@ -115,7 +105,7 @@ Permite ajustar los valores de magnitud, profundidad, ubicación, presencia de t
         # Ejecutar la aplicación
         streamlit run app/streamlit_app.py
 
-## 8. Observaciones finales
+## 7. Observaciones finales
 
 - El modelo no sustituye el trabajo de análisis sísmico profesional; únicamente genera una estimación basada en patrones numéricos.
 
@@ -123,11 +113,11 @@ Permite ajustar los valores de magnitud, profundidad, ubicación, presencia de t
 
 - La interpretación de los resultados debe hacerse con criterio técnico y atendiendo al contexto geológico particular.
 
-## 9. Licencia: 
+## 8. Licencia: 
 
 Este proyecto se distribuye con fines académicos y puede ser reutilizado citando la fuente original de los datos y este repositorio.
 
-## 10. Autores
+## 9. Autores
 
 - **Leonel Delgado Eraso**  
 - **Ayda Lucía Patiño Chaves**
