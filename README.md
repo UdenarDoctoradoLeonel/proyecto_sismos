@@ -71,25 +71,6 @@ El modelo Random Forest alcanzó un desempeño superior en la clasificación, co
 
 ---
 
-## 6. Aplicación web del proyecto
-
-La aplicación está disponible en el siguiente enlace:
-
-**https://proyectosismos-ikfskcmjs4gje3ajwbewc3.streamlit.app**
-
-Permite ajustar los valores de magnitud, profundidad, ubicación, presencia de tsunami y nivel de significancia para evaluar la probabilidad de que el sismo sea clasificado como significativo.
-
----
-
-
----
-
-## 5. Resultados y métrica principal
-
-El modelo Random Forest alcanzó un desempeño superior en la clasificación, con valores altos de precisión y F1 en la clase minoritaria. Aunque la interpretación de un modelo de este tipo requiere cautela, su rendimiento permite usarlo como herramienta de apoyo exploratorio.
-
----
-
 ## 6. Cómo ejecutar el proyecto localmente
 
         # Crear y activar entorno virtual
